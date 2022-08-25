@@ -3,8 +3,8 @@ from linkedin import linkedin
 
 
 RETURN_URL ='https://www.youtube.com/'
-CONSUMER_KEY = '86tdlfi59oh9ke'
-CONSUMER_SECRET = '3jLsdGg6mNg6EAGl'
+CONSUMER_KEY = '##########'
+CONSUMER_SECRET = '#############'
 
 ciao = linkedin.PERMISSIONS.enums
 ciao.pop('CONTACT_INFO')
@@ -28,8 +28,8 @@ application = linkedin.LinkedInApplication(authentication)
 
 from linkedin_api import Linkedin
 
-api = Linkedin('gavriel.hannuna@gmail.com','gh191101')
-my_search = api.get_profile('saraspagnoletto')
+api = Linkedin('###########','######')
+my_search = api.get_profile('##########')
 
 skills = my_search['skills']
 
@@ -41,7 +41,7 @@ for i in range(len(skills)):
 
 from bot_studio import *
 linkedin=bot_studio.linkedin()
-linkedin.login(username='gavriel.hannuna@gmail.com', password='gh191101')
+linkedin.login(username='#########', password='#########')
 
 def get_post_content(data):
     my_feed=[]
