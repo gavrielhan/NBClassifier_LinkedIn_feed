@@ -1,4 +1,4 @@
-# NBClassifier_Linkedin_feed
+# NBClassifier_LinkedIn_feed
 This project was created as a tool to filter specific types of info in my personal LinkedIn feed. This algorithm classifies a LinkedIn feed based on the post content, classifying the post with a 1 if it contains medicine/biotech-related topics, and a 0 if it does not. It then prints the name of the user that wrote a certain post (labeled with a 1), and the post itself. 
 Naïve Bayes Classification 
 This algorithm is based on Naïve Bayes (NB) classification, implemented through the TensorFlow probability package.  An NB classifier uses the Bayes rule to calculate the probability of each word occurring in each phrase, knowing the label of such phrase (0 or 1). In our case:
