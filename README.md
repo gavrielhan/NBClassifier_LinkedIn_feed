@@ -17,4 +17,4 @@ All these probabilities are calculated by simply evaluating the frequency of eac
 The final decision on the label of one post is of course based on the highest probability between the two calculated. 
 The two problems listed above are the main reasons this algorithm is defined as Naïve, more advanced classifiers take into account more parameters and can give more accurate results than this NB classifier. Though it still performs pretty well!
 
-Note: This classifier can it is completely flexible, it can classify your LinkedIn feed by any topic, depending on the training set that is fed to it 
+Note: This classifier is completely flexible, it can classify your LinkedIn feed by any topic, depending on the training set that is fed to it 
