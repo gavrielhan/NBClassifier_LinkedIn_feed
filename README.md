@@ -6,7 +6,7 @@ This algorithm is based on Naïve Bayes (NB) classification, implemented through
 
 When given a training set, the NB algorithm calculates the probability of each word in the data set to occur for a given label. Later, the same probability is used to evaluate the probability that a given phrase should be labeled as 0 or 1. This is done by multipathing the probability of each word in the tested phrase: 
            
-![alt text](https://github.com/gavrielhan/NBClassifier_Linkedin_feed/blob/f1430ffad2f9c33d1e071fd600d87941b9c79e43/Screenshot%202022-08-28%20194226.png)
+![alt text](https://github.com/gavrielhan/NBClassifier_Linkedin_feed/blob/852ce4e9a972830cc4cf73a40e562697507f0959/Screenshot%202022-08-28%20194226.png)
 
 All these probabilities are calculated by simply evaluating the frequency of each word, divided by the total words. The probability of having a certain label depends also form the frequency of those labels given in the training set. Just by looking at those calculations is clear that there are two main problems in such an analysis:
 
