@@ -12,7 +12,7 @@ All these probabilities are calculated by simply evaluating the frequency of eac
 
 1) The order of the words and the meaning of the post are both irrelevant to the algorithm. If someone would have posted in my LinkedIn feed a bunch of nonsense words, all related to the medical/biotech field, the algorithm would have printed that as a suggested read for me. 
 
-2) Strict dependency from the training data set, if a world is not present in the data set is calculated probability to be in a certain label will be 0, making the final probability for the phrase also 0, since all the probabilities are being multiplied by each other. This kind of error can be avoided by adding an arbitrary count to each word that the classifier encounters, avoiding a probability to be exactly 0.
+2) Strict dependency from the training data set, if a world is not present in the data set its calculated probability to receive a certain label will be 0, making the final probability for the phrase also 0, since all the probabilities are being multiplied by each other. This kind of mistake can be avoided by adding an arbitrary count to each word that the classifier encounters, avoiding a probability to be exactly 0.
 
 The final decision on the label of one post is of course based on the highest probability between the two calculated. 
 The two problems listed above are the main reasons this algorithm is defined as Naïve, more advanced classifiers take into account more parameters and can give more accurate results than this NB classifier. Though it still performs pretty well!
