@@ -2,14 +2,11 @@
 This project was created as a tool to filter specific types of info in my personal LinkedIn feed. This algorithm classifies a LinkedIn feed based on the post content, classifying the post with a 1 if it contains medicine/biotech-related topics, and a 0 if it does not. It then prints the name of the user that wrote a certain post (labeled with a 1), and the post itself. 
 Naïve Bayes Classification 
 This algorithm is based on Naïve Bayes (NB) classification, implemented through the TensorFlow probability package.  An NB classifier uses the Bayes rule to calculate the probability of each word occurring in each phrase, knowing the label of such phrase (0 or 1). In our case:
+      ![alt text](https://github.com/gavrielhan/NBClassifier_Linkedin_feed/blob/d9e0d10d9030415da84eccec0d05618622f18645/Screenshot%202022-08-28%20193500.png)
 
-$$P(Word_1|label=1)=(P(label=1|Word_1) P(Word_1))/(P(label=1))$$
-
-When given a training set, the NB algorithm calculates the probability of each word in the data set to occur for a given label. Later, the same probability is used to evaluate the probability that a given phrase should be labeled as 0 or 1. This is done by multipathing the probability of each word in the tested phrase:
-
-$$P(label=1 |Phrase)= P(label=1)&#8719_i ^n P(label=1|Word_i )$$
-
-$$P(label=0 |Phrase)= P(label=0)&#8719_i ^n P(label=0|Word_i )$$
+When given a training set, the NB algorithm calculates the probability of each word in the data set to occur for a given label. Later, the same probability is used to evaluate the probability that a given phrase should be labeled as 0 or 1. This is done by multipathing the probability of each word in the tested phrase: 
+           
+![alt text](https://github.com/gavrielhan/NBClassifier_Linkedin_feed/blob/d9e0d10d9030415da84eccec0d05618622f18645/Screenshot%202022-08-28%20193517.png)
 
 All these probabilities are calculated by simply evaluating the frequency of each word, divided by the total words. The probability of having a certain label depends also form the frequency of those labels given in the training set. Just by looking at those calculations is clear that there are two main problems in such an analysis:
 
