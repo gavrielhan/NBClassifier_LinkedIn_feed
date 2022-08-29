@@ -60,7 +60,7 @@ username = input("Please insert your Linkedin username: ")
 password = getpass.getpass("Please insert your Linkedin password: ")
 n = int(input("Please insert the desired number of scrolls on your LinkedIn feed: "))
 linkedin.login(username=username, password=password)
-os.chdir("C:\\Users\\gavri\\Desktop\\NBclassifier")
+os.chdir("insert path to training set here")
 
 
 data=[]
